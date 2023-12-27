@@ -1,15 +1,16 @@
 import { AppBar, Toolbar , styled} from "@mui/material"
+import logo from '../assets/logo-black.png'
 
 const Container = styled(AppBar)`
-background : black;
-height : 9vh ;
+background : white;
+height : 65px ;
 `
 
 const Header = () => {
   return (
-      <Container>
+      <Container position="static">
           <Toolbar>
-              <img src="./assets/logo-black.png" alt="logo" />
+        <img src={logo} style={{ width: 40}} />
           </Toolbar>
     </Container>
   )
